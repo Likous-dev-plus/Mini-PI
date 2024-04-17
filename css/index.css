@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins&display=swap');
+
+body {
+  overflow: hidden;
+  background-color: #E7F1F6;
+  margin: 0;
+  /* Remova as margens padrão do body */
+}
+
+.nav-container {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  /* Garante que o menu esteja sempre acima do conteúdo */
+}
+
+.content {
+  margin-top: 80px;
+  /* Ajuste o valor conforme necessário para evitar que o conteúdo fique oculto sob o menu */
+}
+
+.container-background {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  background-color: #758CC6;
+  max-width: 90%;
+  /* Definindo a largura máxima como 90% da largura da tela */
+  height: auto;
+  /* Permitindo que a altura seja ajustada automaticamente */
+  border-radius: 16px;
+  margin: 50px auto;
+  /* Centralizando o contêiner verticalmente e ajustando a margem horizontalmente */
+  padding: 20px;
+  box-sizing: border-box;
+  /* Garantindo que o padding não afete o dimensionamento total do contêiner */
+}
+
+.content {
+  margin: auto;
+  color: #3C3D50;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  /* Definindo a variante regular */
+}
+
+h1 {
+  color: #3C3D50;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  /* Definindo a variante negrito */
+  margin-bottom: 20px;
+  line-height: 1.2em;
+}
+
+h1 span {
+  color: #3C3D50;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1em;
+  line-height: 1.2em;
+}
+
+mark {
+  background-color: rgba(73, 70, 70, 0.406);
+  box-shadow: inset 0 -2px 0 rgba(255, 255, 255, .5), inset 0 2px 0 rgba(0, 0, 0, .1);
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sapiens {
+  margin: auto;
+  pointer-events: none;
+  width: 50%;
+  /* Largura responsiva da imagem */
+  max-width: 500px;
+  /* Largura máxima da imagem */
+  margin: auto;
+  /* Centralizando a imagem */
+  float: right;
+  /* Posiciona a imagem à direita */
+}
+
+.show-cookie-popup {
+  overflow: hidden;
+  /* Impede a rolagem da página enquanto o card está visível */
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  /* Define o efeito de vidro */
+  z-index: 999;
+  /* Garante que o overlay fique em cima de todo o conteúdo */
+}
+
+.card {
+  border-radius: 8px;
+  width: 300px;
+  height: 220px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 13px;
+  position: fixed;
+  /* Mudança para posicionamento fixo */
+  top: 50%;
+  /* Coloca o cartão no centro vertical */
+  left: 50%;
+  /* Coloca o cartão no centro horizontal */
+  transform: translate(-50%, -50%);
+  /* Corrige o centro do cartão */
+  z-index: 1000;
+  /* Garante que o cartão esteja acima de outros elementos */
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.062);
+  backdrop-filter: blur(8px);
+  /* Define o efeito de vidro */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Define a opacidade do card */
+}
+
+#cookieSvg {
+  width: 50px;
+}
+
+#cookieSvg g path {
+  fill: rgb(97, 81, 81);
+}
+
+.cookieHeading {
+  font-size: 1.2em;
+  font-weight: 800;
+  color: rgb(26, 26, 26);
+}
+
+.cookieDescription {
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(99, 99, 99);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.acceptButton {
+  width: 80px;
+  height: 30px;
+  background-color: #7b57ff;
+  transition-duration: .2s;
+  border: none;
+  color: rgb(241, 241, 241);
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.declineButton {
+  width: 80px;
+  height: 30px;
+  background-color: rgb(218, 218, 218);
+  transition-duration: .2s;
+  color: rgb(46, 46, 46);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.declineButton:hover {
+  background-color: #ebebeb;
+  transition-duration: .2s;
+}
+
+.acceptButton:hover {
+  background-color: #9173ff;
+  transition-duration: .2s;
+}
